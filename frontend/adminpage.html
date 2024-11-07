@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizSchedule</title>
+    <link rel="stylesheet" href="adminpage.css">
+</head>
+<body>   
+    <header class="navbar">
+        <div class="biz-schedule">BizSchedule</div>
+        <div class="welcome-message" id="welcomeMessage" style="font-size: 24px;"></div> 
+        <div class="nav-buttons">
+            <div class="hamburger-menu">
+                <button id="hamburgerButton">&#9776;</button>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a id="homeButton">Home</a>
+                    <a id="logoutButton">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li>
+                    <a href="#user" class="main-item">Users</a>
+                    <ul class="sub-list">
+                        <li><a href="#add-user" class="sub-item">Add Users</a></li>
+                        <li><a href="#modify-user" class="sub-item">Modify Users</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#schedule" class="main-item">Schedule</a>
+                    <ul class="sub-list">
+                        <li><a href="#create-schedule" class="sub-item">Create Schedule</a></li>
+                        <li><a href="#modify-schedule" class="sub-item">Modify Schedule</a></li>
+                    </ul>
+                </li>
+                <li><a href="#settings" class="main-item">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="content" id="contentArea">
+            <!-- Dynamic content will be displayed here -->
+        </div>
+    </div>
+    <script src="adminpage.js" type="module"></script>
+</body>
+</html>

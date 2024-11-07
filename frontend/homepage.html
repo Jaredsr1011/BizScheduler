@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizSchedule</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>   
+    <header class="navbar">
+        <div class="biz-schedule">BizSchedule</div>
+        <div class="welcome-message" id="welcomeMessage" style="font-size: 24px;"></div> 
+        <div class="nav-buttons">
+            </div>
+            <div class="hamburger-menu">
+                <button id="hamburgerButton">&#9776;</button>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a id="adminButton">Admin</a>
+                    <a id="logoutButton">Logout</a>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="view-buttons">
+        <button id="calendarViewButton">Calendar</button>
+        <button id="dayViewButton">Day</button>
+        <button id="weekViewButton">Week</button>
+    </div>
+
+    <div id="schedule"></div>
+    <script src="homepage.js" type="module"></script>
+</body>
+</html>

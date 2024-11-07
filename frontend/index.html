@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizSchedule</title>
+    <link rel="stylesheet"  href="index.css"> 
+</head>
+<body>   
+
+    <header class="navbar-login">Welcome to BizSchedule</header>
+
+    <div class="login-page">
+        <div class="login-container">
+            <p id="loginError" class="error-message"></p>
+            <form class="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <div class="select-wrapper">
+                    <select id="accountSelect" required>
+                        <option value="" disabled selected>-- Select Account --</option>
+                        <!-- Options will be dynamically populated -->
+                    </select>
+                </div>
+                <button type="button" id="loginButton">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+</html>

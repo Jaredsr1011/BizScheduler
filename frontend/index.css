@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: Arial, sans-serif; 
+}
+
+.navbar-login {
+  background-color: #72A0C1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24pt;
+  font-family: Arial, sans-serif; 
+}
+
+
+.welcome-message {
+flex-grow: 1; 
+text-align: center; 
+font-size: 24pt; 
+}
+
+.login-page .navbar-login {
+  background-color: #72A0C1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24pt;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.login-container {
+  padding: 75px;
+  background-color: white;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: rgb(216, 221, 230);
+  border-right-color: rgb(216, 221, 230);
+  border-bottom-color: rgb(216, 221, 230);
+  border-left-color: rgb(216, 221, 230);
+
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #72A0C1;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=text], input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; 
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-wrapper select {
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 40px; 
+  background-color: #fff; 
+  color: #333; 
+}
+
+.select-wrapper::after {
+  content: '\25BC'; 
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #666;
+}
+
+select option[disabled][hidden] {
+    display: none;
+}
+
+select:invalid {
+    color: gray; 
+}
+
+
+select:valid {
+    color: #333; 
+}
+
+#loginButton.active:hover {
+  opacity: 0.8;
+}
+
+#loginButton {
+  background-color: lightgrey;
+  transition: background-color 0.3s;
+}
+
+#loginButton.active {
+  background-color: lightblue;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  font-weight: semibold;
+  font-size: 18px;
+  font-family: Arial, sans-serif; 
+}
+
